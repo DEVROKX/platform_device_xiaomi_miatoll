@@ -13,7 +13,11 @@
 # limitations under the License.
 
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
-$(call inherit-product, vendor/wave/config/common.mk)
+$(call inherit-product, vendor/wave/configs/common.mk)
+
+# Maintainer Props
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.wave.maintainer_name=RITESHROKX
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
